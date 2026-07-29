@@ -1,2 +1,4 @@
-# freakout-entertainment
-Official website for Freakout Entertainment LLC
+# Freakout Entertainment LLC
+
+Upload index.html, style.css and script.js to your GitHub repository.
+Enable GitHub Pages from Settings > Pages.

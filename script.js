@@ -1,0 +1,1 @@
+function showMessage(){alert('Welcome to Freakout Entertainment LLC!');}
