@@ -1,17 +1,28 @@
-# Freakout Entertainment LLC — Custom Multi-Page Website
+# Freakout Entertainment LLC Website V3.1
 
-Upload these files to the root of your GitHub repository:
+This release includes:
 
-- index.html
-- artist.html
-- album.html
-- style.css
-- script.js
+- New custom FE logo
+- Browser favicon
+- Cinematic intro animation
+- Upgraded mobile navigation
+- OG Famous artist section
+- West Coast Book of Life spotlight
+- Company services section
+- Contact form layout
 
-Keep GitHub Pages set to the `main` branch and `/(root)`.
+## Upload instructions
 
-Next customizations:
-1. Replace the artist-photo placeholder.
-2. Add official cover art.
-3. Replace `href="#"` with music links.
-4. Replace the Formspree placeholder URL in index.html.
+1. Extract the ZIP.
+2. Upload `index.html`, `style.css`, `script.js`, and the entire `assets` folder.
+3. Replace the existing files in the root of your GitHub repository.
+4. Commit the changes.
+5. Wait 1–3 minutes for GitHub Pages to rebuild.
+
+## Contact form
+
+Replace this line in `index.html`:
+
+`https://formspree.io/f/your-form-id`
+
+with your real Formspree endpoint.

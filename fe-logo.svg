@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="gold" x1="0" x2="1">
+      <stop offset="0" stop-color="#8b6418"/>
+      <stop offset="0.45" stop-color="#f1c75b"/>
+      <stop offset="1" stop-color="#a4771c"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="600" height="600" rx="90" fill="#080808"/>
+  <path d="M300 56 506 176v248L300 544 94 424V176Z" fill="none" stroke="url(#gold)" stroke-width="16"/>
+  <path d="M181 167h164v56H242v67h92v54h-92v91h-61z" fill="url(#gold)" filter="url(#glow)"/>
+  <path d="M362 167h82v56h-82zm0 123h69v54h-69zm0 145h82v-56h-82z" fill="url(#gold)" filter="url(#glow)"/>
+  <text x="300" y="507" text-anchor="middle" fill="#f1c75b" font-family="Arial, sans-serif" font-size="22" letter-spacing="5">FREAKOUT ENTERTAINMENT LLC</text>
+</svg>
