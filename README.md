@@ -1,25 +1,17 @@
-# Freakout Entertainment LLC — Premium Website
+# Freakout Entertainment LLC — Custom Multi-Page Website
 
-## Upload to GitHub
+Upload these files to the root of your GitHub repository:
 
-Replace the current website files in your repository with:
+- index.html
+- artist.html
+- album.html
+- style.css
+- script.js
 
-- `index.html`
-- `style.css`
-- `script.js`
+Keep GitHub Pages set to the `main` branch and `/(root)`.
 
-Keep GitHub Pages set to:
-
-- Branch: `main`
-- Folder: `/ (root)`
-
-## Before Public Launch
-
-Open `index.html` and replace:
-
-- `https://formspree.io/f/your-form-id` with your real Formspree form URL
-- Every social link using `href="#"`
-- Music play links using `href="#"`
-- Any project titles, descriptions, or company wording you want customized
-
-The website is fully responsive and built for phones, tablets, and desktop browsers.
+Next customizations:
+1. Replace the artist-photo placeholder.
+2. Add official cover art.
+3. Replace `href="#"` with music links.
+4. Replace the Formspree placeholder URL in index.html.
