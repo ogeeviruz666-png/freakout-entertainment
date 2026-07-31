@@ -1,28 +1,31 @@
-# Freakout Entertainment LLC Website V3.1
+# Freak Out Entertainment LLC — Website V5.0
 
-This release includes:
+A clean, professional GitHub Pages website rebuilt around the official dual-logo identity.
 
-- New custom FE logo
-- Browser favicon
-- Cinematic intro animation
-- Upgraded mobile navigation
-- OG Famous artist section
-- West Coast Book of Life spotlight
-- Company services section
-- Contact form layout
+## Correct repository structure
 
-## Upload instructions
+Upload the CONTENTS of this extracted folder to the main/root level of the GitHub repository:
 
-1. Extract the ZIP.
-2. Upload `index.html`, `style.css`, `script.js`, and the entire `assets` folder.
-3. Replace the existing files in the root of your GitHub repository.
-4. Commit the changes.
-5. Wait 1–3 minutes for GitHub Pages to rebuild.
+- index.html
+- artist.html
+- gallery.html
+- merch.html
+- company.html
+- contact.html
+- README.md
+- assets/ (entire folder)
 
-## Contact form
+Do not open `assets` before uploading the whole package. HTML pages stay at the repository root; images, CSS and JavaScript stay inside `assets`.
 
-Replace this line in `index.html`:
+## Live pages
 
-`https://formspree.io/f/your-form-id`
+- Home: `index.html`
+- OG Famous: `artist.html`
+- Visual Vault: `gallery.html`
+- Merch: `merch.html`
+- Company: `company.html`
+- Contact: `contact.html`
 
-with your real Formspree endpoint.
+## Notes
+
+The merchandise shown is presented as concept artwork and future-release previews. Social links are integrated throughout the site.
