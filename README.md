@@ -1,29 +1,35 @@
-# Freak Out Entertainment LLC — Website V7.0 iPad Flat Edition
+# Freak Out Entertainment LLC — Ultimate Website V10
 
-This package is completely flat: no folders are required.
+## iPad Flat Edition
 
-## Upload instructions
+There are no folders. Every file can be selected and uploaded directly from an iPad.
+
+## Included
+
+- Cinematic homepage and logo introduction
+- OG Famous artist profile
+- Music Vault with Spotify integration
+- Video Vault
+- Visual Media Vault
+- Complete merchandise concept experience
+- Creator Network
+- Events and announcements
+- Fan Zone
+- Electronic Press Kit
+- Company and contact pages
+- Legacy timeline
+- Official social links
+- Mobile navigation and premium page transitions
+- Search-engine and social-sharing metadata
+
+## Upload
 
 1. Download and extract the ZIP.
-2. Open the extracted folder in the iPad Files app.
-3. Tap **Select All**.
-4. Upload every file to the main/root level of your GitHub repository.
-5. Commit directly to `main`.
-6. Use this message:
+2. Open the extracted folder.
+3. Tap Select All.
+4. Upload all files to the root of the GitHub repository.
+5. Commit directly to main using:
 
-`Launch Freak Out Entertainment Website V7.0`
+`Launch Freak Out Entertainment Ultimate Website V10`
 
-## Included pages
-
-- index.html — Home
-- artist.html — OG Famous
-- music.html — Music Vault
-- gallery.html — Visual Vault
-- merch.html — Merchandise concepts
-- creator.html — Creator Network
-- events.html — Events and announcements
-- epk.html — Electronic Press Kit
-- company.html — Company
-- contact.html — Contact and social hub
-
-All images, CSS and JavaScript are selectable files at the same root level.
+6. Wait 1–3 minutes for GitHub Pages to rebuild.
