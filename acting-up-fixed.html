@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050505">
+  <meta name="description" content="Acting Up by OG Famous — Freak Out Entertainment LLC">
+  <title>Acting Up — OG Famous</title>
+  <link rel="stylesheet" href="acting-up.css">
+</head>
+<body>
+  <main class="song-hero" aria-label="Acting Up animated song hero">
+    <div class="skyline-layer" aria-hidden="true"></div>
+    <div class="throne-layer" aria-hidden="true"></div>
+    <div class="dark-vignette" aria-hidden="true"></div>
+    <div class="film-grain" aria-hidden="true"></div>
+    <canvas id="particles" aria-hidden="true"></canvas>
+
+    <header class="top-brand">
+      <span>FREAK OUT ENTERTAINMENT LLC PRESENTS</span>
+      <span class="artist-mark">OG FAMOUS</span>
+    </header>
+
+    <section class="hero-copy">
+      <p class="eyebrow">BUILT FROM REAL LIFE</p>
+      <h1 aria-label="Acting Up">
+        <span>ACTING</span>
+        <em>UP</em>
+      </h1>
+      <p class="tagline">POWER ISN'T GIVEN. <strong>IT'S TAKEN.</strong></p>
+
+      <button class="play-button" id="playButton" type="button" aria-label="Play Acting Up">
+        <span class="play-icon" aria-hidden="true">▶</span>
+        <span class="button-label">PLAY</span>
+      </button>
+
+      <div class="progress-shell" aria-label="Audio progress">
+        <span id="currentTime">0:00</span>
+        <input id="seekBar" type="range" min="0" max="100" value="0" aria-label="Seek through Acting Up">
+        <span id="duration">0:00</span>
+      </div>
+    </section>
+
+    <a class="scroll-cue" href="#behind-record" aria-label="Scroll to Behind the Record">↓</a>
+  </main>
+
+  <section id="behind-record" class="behind-record">
+    <p class="section-label">BEHIND THE RECORD</p>
+    <h2>CONFIDENCE<br><em>REPLACED DOUBT.</em></h2>
+    <p>
+      “Acting Up” is a declaration of confidence, pressure and earned momentum.
+      It captures the moment OG Famous stops waiting for permission and takes control
+      of his own legacy.
+    </p>
+  </section>
+
+  <audio id="audio" preload="metadata">
+    <source src="acting-up.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="acting-up.js"></script>
+</body>
+</html>
