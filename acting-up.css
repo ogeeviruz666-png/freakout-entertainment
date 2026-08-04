@@ -64,3 +64,12 @@ h1 em{font-style:normal;margin-left:15%;font-size:.78em;background:linear-gradie
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}
 }
+
+.audio-status{
+  width:min(560px,88vw);
+  margin:16px 0 0;
+  color:#f5d782;
+  font-size:11px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+}

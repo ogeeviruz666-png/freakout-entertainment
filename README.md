@@ -1,31 +1,18 @@
-# Acting Up — Animated Song Hero
+# Acting Up Playback Fix
 
-This package includes:
+Upload and replace only these three files in the repository root:
 
-- Animated Los Angeles skyline reveal
-- Gold particle effects
-- Throne emergence animation
-- Metallic animated ACTING UP title
-- Tagline reveal
-- Glowing audio play button
-- Full WAV playback and seek bar
-- Behind the Record section
-- Mobile-responsive layout
+- acting-up.html
+- acting-up.js
+- acting-up.css
 
-## Files
+Keep the existing real audio file named exactly:
 
-- `acting-up.html`
-- `acting-up.css`
-- `acting-up.js`
-- `acting-up-cover.png`
-- `acting-up.wav`
-
-## GitHub upload
-
-Upload all five files to the root of your repository, then open:
-
-`https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/acting-up.html`
+- acting-up.mp3
 
 Commit message:
 
-`Add Acting Up animated song experience`
+`Repair Acting Up audio player`
+
+After GitHub Pages turns green, close the old Safari tab and reopen:
+https://ogeeviruz666-png.github.io/freakout-entertainment/acting-up.html
