@@ -1,33 +1,21 @@
-# Project Legacy v3.2 — Song Experience Upgrade
+# Project Legacy v4.0 — Music Vault Centerpiece
 
-Upload and replace only these three files in the repository root:
+This release turns the Music Vault into the center of the site.
 
-- `song.html`
-- `song-engine.js`
-- `song-engine.css`
+## New
+- 27 catalog entries in one searchable archive
+- Acting Up remains the first fully unlocked experience
+- Remaining releases appear as polished locked cards until their assets are added
+- Collection filters
+- Live / Coming Soon filters
+- Vault statistics
+- Featured Acting Up section
+- Quick-play audio bar
+- Up Next rail on song pages
+- Better tablet/mobile layouts
 
-Keep your existing:
-- `songs-data.js`
-- `acting-up.mp3`
-- `acting-up-cover.png`
-
-## New features
-
-- Reading Mode for lyrics
-- Jump-to-section lyric navigation
-- Copy Lyrics button
-- Native iPad/iPhone Share button
-- Persistent bottom mini player
-- Custom play/pause from the mini player
-- Seek bar and elapsed/remaining timing
-- Subtle visual state while audio is playing
-- Mobile responsive controls
-- Cache-busted v3 song scripts
+## Upload
+Upload all files in this ZIP to the repository root and replace existing files when prompted.
 
 Commit message:
-
-`Launch Project Legacy v3.2 Song Experience`
-
-After GitHub Pages is green, reopen:
-
-`https://ogeeviruz666-png.github.io/freakout-entertainment/song.html?song=acting-up`
+`Launch Project Legacy v4 Music Vault`
