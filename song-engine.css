@@ -125,3 +125,11 @@
   .song-engine-hero{padding-left:22px;padding-right:22px}
   .song-engine-copy h1{font-size:78px}
 }
+
+.lyric-block p:empty{
+  height:14px;
+  margin:0;
+}
+.lyric-block p{
+  white-space:pre-wrap;
+}
