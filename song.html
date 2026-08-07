@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#050505">
+<title>Song | OG Famous</title>
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="song-engine.css">
+</head>
+<body class="song-page">
+<div class="page-transition"></div>
+<header class="site-header">
+<a class="brand" href="index.html"><img src="official-logo.png" alt="Freak Out Entertainment"></a>
+<button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+<nav class="main-nav">
+<a href="index.html">Home</a><a href="artist.html">OG Famous</a><a href="music.html">Music Vault</a>
+<a href="videos.html">Videos</a><a href="gallery.html">Media</a><a href="merch.html">Merch</a>
+<a class="nav-cta" href="contact.html">Contact</a>
+</nav>
+</header>
+
+<main data-song-page>
+<section class="song-engine-hero" data-song-hero>
+<div class="film-grain"></div>
+<div class="song-engine-copy reveal visible">
+<p class="kicker">OG Famous • Freak Out Entertainment LLC</p>
+<h1 data-song-title>SONG</h1>
+<p class="tagline" data-song-tagline></p>
+<button class="custom-song-play" data-custom-play type="button">▶ PLAY</button>
+<p class="audio-status" data-audio-status>Loading audio…</p>
+<audio class="native-song-player" data-song-audio controls preload="metadata" playsinline></audio>
+</div>
+</section>
+
+<section class="section split reveal visible">
+<div><p class="kicker">Behind the Record</p><h2>THE STORY<br><em>BEHIND THE SONG.</em></h2></div>
+<div class="body-copy"><p class="lead" data-song-story></p></div>
+</section>
+
+<section class="section song-content-grid reveal visible">
+<div class="song-cover-panel"><img data-song-cover src="" alt=""></div>
+<div class="lyrics-panel">
+<p class="kicker">Official Lyrics</p>
+<h2>READ THE<br><em>RECORD.</em></h2>
+<div data-song-lyrics></div>
+</div>
+</section>
+
+<section class="section reveal visible">
+<p class="kicker">Song Information</p>
+<h2>OFFICIAL<br><em>CREDITS.</em></h2>
+<div class="credits-grid" data-song-credits></div>
+</section>
+</main>
+
+<script src="site.js"></script>
+<script src="songs-data.js"></script>
+<script src="song-engine.js"></script>
+</body>
+</html>

@@ -1,18 +1,35 @@
-# Acting Up Playback Fix
+# Project Legacy v3.1 — Music Vault Song Engine
 
-Upload and replace only these three files in the repository root:
+This is a complete iPad-friendly flat package. There are no folders.
 
-- acting-up.html
-- acting-up.js
-- acting-up.css
+## New features
 
-Keep the existing real audio file named exactly:
+- Searchable Music Vault
+- Reusable dynamic song page
+- Native Safari-compatible audio playback
+- Custom cinematic Play button
+- Behind the Record section
+- Displayed lyrics engine
+- Song credits engine
+- Single data file for future releases
+- Acting Up fully connected as Song #1
 
-- acting-up.mp3
+## Important lyrics note
 
-Commit message:
+The exact approved lyric text was not included in the conversation files, so the engine contains a clearly marked lyric placeholder. Replace the placeholder lines inside `songs-data.js` with the final approved lyrics; the page will display them automatically.
 
-`Repair Acting Up audio player`
+## Upload
 
-After GitHub Pages turns green, close the old Safari tab and reopen:
-https://ogeeviruz666-png.github.io/freakout-entertainment/acting-up.html
+1. Download and extract the ZIP.
+2. Open the extracted folder in the iPad Files app.
+3. Tap Select All.
+4. Upload every file to the root of the GitHub repository.
+5. Replace older files when prompted.
+6. Commit directly to main using:
+
+`Launch Project Legacy v3.1 Music Vault`
+
+## Live pages
+
+- Music Vault: `music.html`
+- Acting Up: `song.html?song=acting-up`
