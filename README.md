@@ -1,21 +1,25 @@
-# Project Legacy v4.0 — Music Vault Centerpiece
+# Project Legacy v4.0.1 — Audio / Song Engine Fix
 
-This release turns the Music Vault into the center of the site.
+The v4 song page was loading the HTML, but the JavaScript stopped because of a syntax error.
+That is why the page showed:
 
-## New
-- 27 catalog entries in one searchable archive
-- Acting Up remains the first fully unlocked experience
-- Remaining releases appear as polished locked cards until their assets are added
-- Collection filters
-- Live / Coming Soon filters
-- Vault statistics
-- Featured Acting Up section
-- Quick-play audio bar
-- Up Next rail on song pages
-- Better tablet/mobile layouts
+- `SONG` instead of `ACTING UP`
+- `Loading audio...`
+- `0:00`
+- no story / lyrics data
+- Play button not working
 
-## Upload
-Upload all files in this ZIP to the repository root and replace existing files when prompted.
+## Upload and replace only:
+
+- `song-engine.js`
+- `song.html`
 
 Commit message:
-`Launch Project Legacy v4 Music Vault`
+
+`Fix Project Legacy v4 song engine`
+
+After GitHub Pages turns green, close the old song tab and reopen:
+
+`https://ogeeviruz666-png.github.io/freakout-entertainment/song.html?song=acting-up`
+
+The page should again show ACTING UP, load the story and lyrics, and play the MP3.
