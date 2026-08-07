@@ -1,22 +1,33 @@
-# Project Legacy v3.1.1 — Acting Up Lyrics Patch
+# Project Legacy v3.2 — Song Experience Upgrade
 
-This patch adds the full approved lyrics for:
+Upload and replace only these three files in the repository root:
 
-**ACTING UP — OG Famous x Menace**
-
-## Upload only these files
-
-- `songs-data.js`
+- `song.html`
+- `song-engine.js`
 - `song-engine.css`
 
-Upload them to the root of your GitHub repository and replace the existing versions.
+Keep your existing:
+- `songs-data.js`
+- `acting-up.mp3`
+- `acting-up-cover.png`
+
+## New features
+
+- Reading Mode for lyrics
+- Jump-to-section lyric navigation
+- Copy Lyrics button
+- Native iPad/iPhone Share button
+- Persistent bottom mini player
+- Custom play/pause from the mini player
+- Seek bar and elapsed/remaining timing
+- Subtle visual state while audio is playing
+- Mobile responsive controls
+- Cache-busted v3 song scripts
 
 Commit message:
 
-`Add full Acting Up lyrics`
+`Launch Project Legacy v3.2 Song Experience`
 
-After GitHub Pages turns green, open:
+After GitHub Pages is green, reopen:
 
-`song.html?song=acting-up`
-
-The full lyrics will display in the Official Lyrics section.
+`https://ogeeviruz666-png.github.io/freakout-entertainment/song.html?song=acting-up`

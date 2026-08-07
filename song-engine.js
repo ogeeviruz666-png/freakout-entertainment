@@ -146,4 +146,126 @@ document.addEventListener('DOMContentLoaded', () => {
       if (status) status.textContent = 'Audio could not be loaded.';
     });
   }
+
+  // Project Legacy v3.2 — lyrics experience + persistent mini player.
+  const lyricRoot = document.querySelector('[data-song-lyrics]');
+  const lyricNav = document.querySelector('[data-lyric-nav]');
+
+  if (lyricRoot && lyricNav) {
+    const blocks = [...lyricRoot.querySelectorAll('.lyric-block')];
+    blocks.forEach((block, index) => {
+      block.id = `lyrics-${index + 1}`;
+      const heading = block.querySelector('h3')?.textContent || `Section ${index + 1}`;
+      const link = document.createElement('a');
+      link.href = `#${block.id}`;
+      link.textContent = heading;
+      lyricNav.appendChild(link);
+    });
+  }
+
+  const readingButton = document.querySelector('[data-reading-mode]');
+  readingButton?.addEventListener('click', () => {
+    document.body.classList.toggle('lyrics-reading-mode');
+    readingButton.textContent = document.body.classList.contains('lyrics-reading-mode')
+      ? 'Exit Reading Mode'
+      : 'Reading Mode';
+  });
+
+  const copyLyricsButton = document.querySelector('[data-copy-lyrics]');
+  copyLyricsButton?.addEventListener('click', async () => {
+    if (!song || !navigator.clipboard) return;
+    const text = song.lyrics
+      .map(block => `${block.section}\n${block.lines.join('\n')}`)
+      .join('\n\n');
+    try {
+      await navigator.clipboard.writeText(`${song.title} — ${song.artist}\n\n${text}`);
+      copyLyricsButton.textContent = 'Copied ✓';
+      setTimeout(() => copyLyricsButton.textContent = 'Copy Lyrics', 1600);
+    } catch (error) {
+      console.error('Copy failed:', error);
+    }
+  });
+
+  const shareButton = document.querySelector('[data-share-song]');
+  shareButton?.addEventListener('click', async () => {
+    const shareData = {
+      title: `${song.title} — ${song.artist}`,
+      text: `${song.title} by ${song.artist}`,
+      url: window.location.href
+    };
+    try {
+      if (navigator.share) {
+        await navigator.share(shareData);
+      } else if (navigator.clipboard) {
+        await navigator.clipboard.writeText(window.location.href);
+        shareButton.textContent = 'Link Copied ✓';
+        setTimeout(() => shareButton.textContent = 'Share Song', 1600);
+      }
+    } catch (error) {
+      if (error?.name !== 'AbortError') console.error('Share failed:', error);
+    }
+  });
+
+  const mini = document.querySelector('[data-mini-player]');
+  if (mini && audio) {
+    const miniCover = mini.querySelector('[data-mini-cover]');
+    const miniTitle = mini.querySelector('[data-mini-title]');
+    const miniArtist = mini.querySelector('[data-mini-artist]');
+    const miniToggle = mini.querySelector('[data-mini-toggle]');
+    const miniSeek = mini.querySelector('[data-mini-seek]');
+    const miniCurrent = mini.querySelector('[data-mini-current]');
+    const miniDuration = mini.querySelector('[data-mini-duration]');
+
+    miniCover.src = song.cover;
+    miniCover.alt = `${song.title} cover art`;
+    miniTitle.textContent = song.title;
+    miniArtist.textContent = song.artist;
+
+    const formatTime = (seconds) => {
+      if (!Number.isFinite(seconds)) return '0:00';
+      const min = Math.floor(seconds / 60);
+      const sec = Math.floor(seconds % 60).toString().padStart(2, '0');
+      return `${min}:${sec}`;
+    };
+
+    miniToggle.addEventListener('click', async () => {
+      try {
+        if (audio.paused) await audio.play();
+        else audio.pause();
+      } catch (error) {
+        console.error('Mini player error:', error);
+      }
+    });
+
+    miniSeek.addEventListener('input', () => {
+      if (audio.duration) {
+        audio.currentTime = (Number(miniSeek.value) / 100) * audio.duration;
+      }
+    });
+
+    audio.addEventListener('loadedmetadata', () => {
+      miniDuration.textContent = formatTime(audio.duration);
+    });
+    audio.addEventListener('timeupdate', () => {
+      miniCurrent.textContent = formatTime(audio.currentTime);
+      miniSeek.value = audio.duration ? String((audio.currentTime / audio.duration) * 100) : '0';
+    });
+    audio.addEventListener('playing', () => {
+      miniToggle.textContent = '❚❚';
+      mini.classList.add('is-playing');
+      document.body.classList.add('song-is-playing');
+    });
+    audio.addEventListener('pause', () => {
+      miniToggle.textContent = '▶';
+      mini.classList.remove('is-playing');
+      document.body.classList.remove('song-is-playing');
+    });
+    audio.addEventListener('ended', () => {
+      miniToggle.textContent = '▶';
+      miniSeek.value = '0';
+      mini.classList.remove('is-playing');
+      document.body.classList.remove('song-is-playing');
+    });
+  }
+
 });
