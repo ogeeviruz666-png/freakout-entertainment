@@ -427,22 +427,37 @@ window.OGF_SONGS = [
     available: false
   },
   {
-    id: "mob-ties",
-    title: "MOB TIES",
+  id: "mob-ties",
+  title: "MOB TIES",
+  artist: "OG Famous",
+  label: "Freakout Entertainment LLC",
+  runtime: "—",
+  genre: "West Coast Hip-Hop",
+  collection: "Street Anthems",
+  audio: "mob-ties.mp3",
+  cover: "mob-ties-cover.png",
+  tagline: "Loyalty has a price. Family has a code.",
+
+  story: "MOB TIES is built around loyalty, brotherhood, consequences and the unwritten codes that come with the streets. OG Famous delivers a cinematic West Coast record centered on trust, pressure and knowing exactly who stands beside you when everything is on the line.",
+
+  credits: {
     artist: "OG Famous",
-    label: "Freak Out Entertainment LLC",
-    runtime: "—",
-    genre: "West Coast Hip-Hop",
-    collection: "Street Anthems",
-    audio: "",
-    cover: "",
-    tagline: "Coming to the Music Vault.",
-    story: "This release is reserved in the OG Famous archive and will unlock when its audio, artwork and official lyrics are added.",
-    credits: { artist: "OG Famous", songwriter: "OG Famous", label: "Freak Out Entertainment LLC", location: "East Los Angeles / Boyle Heights" },
-    lyrics: [],
-    related: [],
-    available: false
+    songwriter: "OG Famous",
+    label: "Freakout Entertainment LLC",
+    location: "East Los Angeles / Boyle Heights"
   },
+
+  lyrics: [],
+
+  related: [
+    "acting-up",
+    "never-bow",
+    "last-of-the-real-ones",
+    "we-dont-condone-that"
+  ],
+
+  available: false
+},
   {
     id: "never-bow",
     title: "NEVER BOW",
