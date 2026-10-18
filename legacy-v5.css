@@ -12,3 +12,42 @@ img{max-width:100%}img:not(.logo):not([class*="icon"]){object-fit:cover}
 .v5-section{padding:86px 0}.v5-section-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:30px}.v5-section h2{font-family:Georgia,'Times New Roman',serif;font-size:clamp(2.2rem,4vw,4rem);letter-spacing:-.04em;line-height:1.05;margin:12px 0}.v5-section p{color:var(--v5-muted);line-height:1.7}.v5-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.v5-card{background:linear-gradient(145deg,#1a1a1d,#0e0f12);border:1px solid var(--v5-line);padding:28px;min-height:225px;display:flex;flex-direction:column;justify-content:space-between;transition:transform .2s,border-color .2s}.v5-card:hover{transform:translateY(-5px);border-color:var(--v5-gold)}.v5-card small{color:var(--v5-gold);letter-spacing:.16em;text-transform:uppercase}.v5-card h3{font-family:Georgia,'Times New Roman',serif;font-size:1.75rem;margin:14px 0 6px}.v5-card a{color:var(--v5-cream);text-decoration:none}.v5-card a:hover{color:var(--v5-gold)}.v5-rule{border:0;border-top:1px solid var(--v5-line)}
 @media(max-width:760px){.v5-hero{min-height:65vh}.v5-hero-inner{padding:85px 0 70px}.v5-grid{grid-template-columns:1fr}.v5-section{padding:58px 0}.v5-section-head{display:block}.v5-card{min-height:170px}.v5-actions{flex-direction:column;align-items:stretch}.v5-cta{width:100%}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition-duration:.01ms!important;animation-duration:.01ms!important}}
+
+/* Freakout Entertainment — Unified Brand Theme */
+:root {
+  --freak-black: #050505;
+  --freak-gold: #D7B56D;
+  --freak-pink: #F04498;
+}
+
+body {
+  background-color: var(--freak-black);
+}
+
+.v5-eyebrow {
+  color: var(--freak-gold);
+}
+
+.v5-section-head h2 em {
+  color: var(--freak-pink);
+}
+
+.v5-cta {
+  background: var(--freak-gold);
+  color: var(--freak-black);
+}
+
+.v5-cta-outline {
+  background: transparent;
+  color: var(--freak-pink);
+  border: 1px solid var(--freak-pink);
+}
+
+.v5-cta:hover {
+  background: var(--freak-pink);
+  color: var(--freak-black);
+}
+
+.v5-cta-outline:hover {
+  background: var(--freak-gold);
+}
